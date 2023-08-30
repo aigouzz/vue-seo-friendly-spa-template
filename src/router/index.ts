@@ -1,4 +1,5 @@
 import { About, Home, NotFound } from '@/views';
+import My from '@/views/my/index.vue'; 
 import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router';
 
 const DESC_SUFFIX = 'description - length <= 160 chars.';
@@ -22,6 +23,16 @@ const routes: RouteRecordRaw[] = [
       transition: 'fade',
       title: 'About',
       description: `About ${DESC_SUFFIX}`
+    },
+  },
+  {
+    path: '/my',
+    name: 'My',
+    component: My,
+    meta: {
+      transition: 'fade',
+      title: 'My indexx page',
+      description: `my ${DESC_SUFFIX}`
     },
   },
   {

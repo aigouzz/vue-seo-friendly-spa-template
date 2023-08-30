@@ -32,6 +32,12 @@
         >
           <span>About</span>
         </RouterLink>
+        <RouterLink
+          :to="{ name: 'My' }"
+          class="navbar-item"
+        >
+          <span>My page</span>
+        </RouterLink>
         <div class="seperator" />
         <a
           target="_blank"
